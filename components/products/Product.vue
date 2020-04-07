@@ -1,5 +1,6 @@
 <template>
   <section id="product">
+    <CarouselProduct />
     <div class="content content-background">
       <section class="sidenav overflow-scroll">
         <div class="product-category">
@@ -95,7 +96,11 @@
   </section>
 </template>
 <script>
+import CarouselProduct from '@/components/products/ProductSlide'
 export default {
+  components: {
+    CarouselProduct
+  },
   computed: {
     getProduct () {
       return this.$store.getters.getProducts

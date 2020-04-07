@@ -1,17 +1,4 @@
 <template>
-  <!-- <carousel-3d
-    class="carousel-product"
-    :controls-visible="true"
-    :controls-prev-html="'&#10093;'"
-    :controls-next-html="'&#10093;'"
-    :controls-width="20"
-    :controls-height="30"
-    :clickable="false"
-  >
-    <slide class="slider" v-for="(slide, i) in 5" :key="i" :index="i">
-      <div>Serkan</div>
-    </slide>
-  </carousel-3d> -->
   <carousel
     :per-page-custom="[[200, 3], [1024, 3]]"
     :navigation-enabled="true"
